@@ -1,0 +1,35 @@
+[gd_resource type="VisualShader" load_steps=2 format=3 uid="uid://dxdwrkmsat7xh"]
+
+[sub_resource type="VisualShaderNodeFloatParameter" id="VisualShaderNodeFloatParameter_bxsrs"]
+parameter_name = "AlphaValue"
+default_value_enabled = true
+default_value = 1.0
+
+[resource]
+code = "shader_type canvas_item;
+render_mode blend_mix;
+
+uniform float AlphaValue = 1;
+
+
+
+void fragment() {
+// FloatParameter:2
+	float n_out2p0 = AlphaValue;
+
+
+// Output:0
+	COLOR.a = n_out2p0;
+
+
+}
+"
+graph_offset = Vector2(307.297, -59.188)
+mode = 1
+flags/light_only = false
+nodes/vertex/0/position = Vector2(900, 180)
+nodes/fragment/0/position = Vector2(780, -60)
+nodes/fragment/2/node = SubResource("VisualShaderNodeFloatParameter_bxsrs")
+nodes/fragment/2/position = Vector2(420, 40)
+nodes/fragment/connections = PackedInt32Array(2, 0, 0, 1)
+nodes/light/0/position = Vector2(800, 180)
