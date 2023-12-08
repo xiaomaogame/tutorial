@@ -1,0 +1,16 @@
+config_version=5
+
+[application]
+
+config/name="VisualShaderDemo"
+config/features=PackedStringArray("4.2", "Mobile")
+config/icon="res://icon.svg"
+config/tags=PackedStringArray("教程")
+
+[dotnet]
+
+project/assembly_name="VisualShaderDemo"
+
+[rendering]
+
+renderer/rendering_method="mobile"
