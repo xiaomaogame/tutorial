@@ -16,7 +16,7 @@ public partial class DissolveDemo : Sprite2D
         ShaderMaterial shaderMaterial = this.Material as ShaderMaterial;
         if (shaderMaterial != null)
         {
-            shaderMaterial.SetShaderParameter("AlphaValue", hSlider.Value);
+            shaderMaterial.SetShaderParameter("DissolveValue", hSlider.Value);
         }
     }
 

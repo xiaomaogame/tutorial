@@ -6,9 +6,10 @@
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_v7fwx"]
 shader = ExtResource("1_nxyde")
-shader_parameter/AlphaValue = 1.0
+shader_parameter/DissolveValue = -1.0
 
 [node name="Dissolve" type="Node2D"]
+position = Vector2(2, -1)
 
 [node name="Icon" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_v7fwx")
@@ -23,13 +24,13 @@ script = ExtResource("3_daty4")
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -250.0
-offset_top = 53.0
-offset_right = 250.0
-offset_bottom = 104.0
+offset_left = -249.0
+offset_top = 58.0
+offset_right = 251.0
+offset_bottom = 109.0
 grow_horizontal = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
+min_value = -1.0
 max_value = 1.0
 step = 0.01
-value = 1.0
