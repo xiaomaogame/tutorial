@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dpqww67fqa7g1"]
 
-[ext_resource type="Texture2D" uid="uid://cd8uqdn5xt83i" path="res://wave/icon.svg" id="1_riwmo"]
+[ext_resource type="Texture2D" uid="uid://cd8uqdn5xt83i" path="res://mirror/icon.svg" id="1_riwmo"]
 [ext_resource type="Shader" uid="uid://df324jnt200hq" path="res://wave/wave.tres" id="1_vhspu"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ccm85"]

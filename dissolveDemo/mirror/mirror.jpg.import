@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crpajxetyoi23"
-path="res://.godot/imported/icon.svg-15c877005474f250f7c83cbb82ef9af6.ctex"
+uid="uid://dh6ritr6hr8b7"
+path="res://.godot/imported/mirror.jpg-808d2733a2c18806a10d7ffc16ea6b37.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://wave/icon.svg"
-dest_files=["res://.godot/imported/icon.svg-15c877005474f250f7c83cbb82ef9af6.ctex"]
+source_file="res://mirror/mirror.jpg"
+dest_files=["res://.godot/imported/mirror.jpg-808d2733a2c18806a10d7ffc16ea6b37.ctex"]
 
 [params]
 
@@ -32,6 +32,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false
