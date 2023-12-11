@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://bp6hqx8twwlg1"]
+
+[ext_resource type="Texture2D" uid="uid://cohn5j7nj15u0" path="res://scroll/map.jpg" id="1_gjday"]
+[ext_resource type="Shader" uid="uid://cjypij7h6ucop" path="res://scroll/scroll.tres" id="1_llq7r"]
+[ext_resource type="Script" path="res://scroll/Scroll.cs" id="1_q27l3"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6pc84"]
+shader = ExtResource("1_llq7r")
+shader_parameter/SpeedParameter = 0.0
+
+[node name="Scroll" type="Node2D"]
+script = ExtResource("1_q27l3")
+
+[node name="Map" type="Sprite2D" parent="."]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_6pc84")
+position = Vector2(394, 326)
+scale = Vector2(1.43779, 1.165)
+texture = ExtResource("1_gjday")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HSlider" type="HSlider" parent="CanvasLayer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -327.0
+offset_top = 67.0
+offset_right = 303.0
+offset_bottom = 188.0
+grow_horizontal = 2
+max_value = 1.0
+step = 0.01

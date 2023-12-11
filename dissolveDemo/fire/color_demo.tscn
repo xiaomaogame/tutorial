@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=3 uid="uid://gcv5em1o5277"]
+
+[ext_resource type="Texture2D" uid="uid://qeiiph1dp7fq" path="res://fire/fire.png" id="1_dm1b6"]
+[ext_resource type="Shader" uid="uid://b3tf0kbdqv7lh" path="res://fire/fire_demo.tres" id="1_l3x4n"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_pbiky"]
+noise_type = 3
+frequency = 0.0183
+fractal_type = 0
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_qpssn"]
+seamless = true
+noise = SubResource("FastNoiseLite_pbiky")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gy60c"]
+shader = ExtResource("1_l3x4n")
+shader_parameter/Texture2DParameter = SubResource("NoiseTexture2D_qpssn")
+
+[node name="FireDemo" type="Node2D"]
+
+[node name="Fire" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_gy60c")
+position = Vector2(383, 330)
+scale = Vector2(0.633594, 0.633594)
+texture = ExtResource("1_dm1b6")

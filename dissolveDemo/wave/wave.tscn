@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dpqww67fqa7g1"]
+
+[ext_resource type="Texture2D" uid="uid://cd8uqdn5xt83i" path="res://wave/icon.svg" id="1_riwmo"]
+[ext_resource type="Shader" uid="uid://df324jnt200hq" path="res://wave/wave.tres" id="1_vhspu"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ccm85"]
+shader = ExtResource("1_vhspu")
+shader_parameter/FrequencyParameter = 100.0
+shader_parameter/SpeedParameter = -10.0
+shader_parameter/ForceParameter = 0.1
+
+[node name="Wave" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_ccm85")
+position = Vector2(390, 277)
+scale = Vector2(3.20313, 3.20313)
+texture = ExtResource("1_riwmo")
