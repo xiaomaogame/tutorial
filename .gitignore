@@ -1,3 +1,8 @@
 # Godot 4+ specific ignores
 .godot/
 *.vsidx
+/.vs/slnx.sqlite
+*.bin
+*.v2
+/VisualShaderDemo/project.godot
+/VisualShaderDemo/.vs/VISUALSHADERDEMO/v17/.suo
