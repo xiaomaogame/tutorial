@@ -14,6 +14,7 @@ noise = SubResource("FastNoiseLite_pbiky")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_gy60c"]
 shader = ExtResource("1_l3x4n")
+shader_parameter/ColorParameter = Color(0.709804, 0.152941, 0.152941, 1)
 shader_parameter/Texture2DParameter = SubResource("NoiseTexture2D_qpssn")
 
 [node name="FireDemo" type="Node2D"]

@@ -5,9 +5,9 @@
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ccm85"]
 shader = ExtResource("1_vhspu")
-shader_parameter/FrequencyParameter = 100.0
+shader_parameter/FrequencyParameter = 120.0
 shader_parameter/SpeedParameter = -10.0
-shader_parameter/ForceParameter = 0.1
+shader_parameter/ForceParameter = 0.09
 
 [node name="Wave" type="Node2D"]
 

@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://xmt6ajms0uug"]
+[gd_scene load_steps=8 format=3 uid="uid://xmt6ajms0uug"]
 
 [ext_resource type="Texture2D" uid="uid://dh6ritr6hr8b7" path="res://mirror/mirror.jpg" id="1_oqebh"]
 [ext_resource type="Shader" uid="uid://5of7pfi4acnk" path="res://mirror/mirror.tres" id="2_3tdw2"]
 [ext_resource type="Texture2D" uid="uid://cd8uqdn5xt83i" path="res://mirror/icon.svg" id="3_0aftl"]
+[ext_resource type="Script" path="res://mirror/Move.cs" id="3_68r0m"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_757pm"]
 noise_type = 2
@@ -25,8 +26,10 @@ scale = Vector2(1.11806, 1.04889)
 texture = ExtResource("1_oqebh")
 
 [node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(289, 293)
+position = Vector2(281, 285)
+scale = Vector2(0.867188, 0.867188)
 texture = ExtResource("3_0aftl")
+script = ExtResource("3_68r0m")
 
 [node name="Mirror" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_7p8et")
